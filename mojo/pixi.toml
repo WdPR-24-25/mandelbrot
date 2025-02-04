@@ -1,0 +1,17 @@
+[project]
+authors = ["yacoop <groobzone@gmail.com>"]
+channels = ["https://conda.modular.com/max-nightly", "https://conda.modular.com/max", "https://repo.prefix.dev/modular-community", "conda-forge"]
+description = "Add a short description here"
+name = "parallel_programming"
+platforms = ["linux-64"]
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
+max = ">=25.1.0.dev2025013005,<26"
+parallel = ">=20241222,<20241223"
+time = ">=1.9,<2"
+numpy = ">=1.26.4,<2"
+matplotlib = ">=3.10.0,<4"
+pillow = ">=11.1.0,<12"
