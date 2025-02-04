@@ -5,3 +5,4 @@
 ### Podział na języki:
 
 - Dawid Karpiński - Golang
+- Jakub Wawrzonkowski - Mojo
