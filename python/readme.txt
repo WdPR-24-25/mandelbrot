@@ -1,0 +1,3 @@
+Uruchamia się po prostu python3 mandelbrodt.py
+Zwraca csv do ./outputs/...
+stworzy sobie folder tam gdzie jest
