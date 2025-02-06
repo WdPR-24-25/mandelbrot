@@ -1,0 +1,1 @@
+uwaga na block size!!!!!
