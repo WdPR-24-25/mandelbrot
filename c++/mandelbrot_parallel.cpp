@@ -11,11 +11,11 @@
 using namespace std;
 using namespace std::chrono;
 
-// Ustawienia
+
 const int maxIterations = 200;
 const double xMin = -2.1, xMax = 0.6, yMin = -1.2, yMax = 1.2;
 
-// Funkcja do generowania czêœci obrazu Mandelbrota
+
 void generateMandelbrotPart(int width, int height, int startY, int endY, vector<vector<int>>& image) {
     for (int py = startY; py < endY; py++) {
         for (int px = 0; px < width; px++) {
@@ -37,7 +37,7 @@ void generateMandelbrotPart(int width, int height, int startY, int endY, vector<
     }
 }
 
-// Funkcja do generowania obrazu Mandelbrota równolegle
+
 void generateMandelbrotParallel(int width, int height, const string &filename) {
     vector<vector<int>> image(height, vector<int>(width));
 
@@ -56,7 +56,7 @@ void generateMandelbrotParallel(int width, int height, const string &filename) {
         t.join();
     }
 
-    // Zapisz do pliku (znowu w ASCII)
+    
     ofstream file(filename);
     for (int py = 0; py < height; py++) {
         for (int px = 0; px < width; px++) {
@@ -67,7 +67,7 @@ void generateMandelbrotParallel(int width, int height, const string &filename) {
     file.close();
 }
 
-// Funkcja do uruchamiania testów wydajnoœci równolegle
+
 void runPerformanceTestsParallel(const vector<int>& sizes, int repetitions) {
     for (int size : sizes) {
         long long totalTime = 0;
